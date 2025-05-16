@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Delete Account - Mutabaah Go">
+  <Navbar />
+
+  <section
+    class="w-full min-h-screen bg-gradient-to-b from-white to-orange-50 pt-40 pb-36"
+  >
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+      <div class="text-center mb-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-orange-600 mb-4">
+          How to Delete Your Account
+        </h1>
+        <p class="text-gray-600 text-lg md:text-xl">
+          📅 <strong>Last Updated:</strong> May 16, 2025
+        </p>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md p-6 md:p-10 max-w-3xl mx-auto text-gray-700 text-lg space-y-6"
+      >
+        <p>
+          <strong>Mutabaah Go</strong> allows you to permanently delete your account
+          and all associated data directly from the app. This action is irreversible.
+        </p>
+
+        <h2 class="text-2xl font-bold text-orange-500">
+          📱 Steps to Delete Your Account
+        </h2>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Open the <strong>Mutabaah Go</strong> app on your device</li>
+          <li>Go to the <strong>Settings</strong> tab</li>
+          <li>Scroll down and tap <strong>“Delete Account”</strong></li>
+          <li>Confirm the deletion when prompted</li>
+        </ol>
+        <p>
+          Once confirmed, your account and all data will be <strong
+            >permanently deleted immediately</strong
+          >.
+        </p>
+
+        <h2 class="text-2xl font-bold text-orange-500">
+          🧾 What Data Will Be Deleted?
+        </h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Full Name</li>
+          <li>Username</li>
+          <li>Email Address</li>
+          <li>Ibadah activity logs</li>
+          <li>Children’s data (if applicable)</li>
+          <li>Subscription and usage data</li>
+          <li>Device Token (for notification)</li>
+        </ul>
+        <p>This process is <strong>irreversible</strong>.</p>
+
+        <h2 class="text-2xl font-bold text-orange-500">🔒 Retention Period</h2>
+        <p>
+          We do <strong>not retain any personal data</strong> after account deletion.
+          No backup or copy will be kept after this action.
+        </p>
+
+        <h2 class="text-2xl font-bold text-orange-500">📩 Need Help?</h2>
+        <p>
+          If you encounter issues or have questions, contact us:<br />
+          <strong>📧 Email:</strong>
+          <a
+            href="mailto:zazuba.studio@gmail.com"
+            class="text-blue-600 underline">zazuba.studio@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<Footer />
