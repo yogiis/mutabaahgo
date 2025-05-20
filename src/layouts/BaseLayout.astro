@@ -1,16 +1,16 @@
 ---
 import "../styles/global.css";
-const { title = "My App" } = Astro.props;
+const { title } = Astro.props;
 ---
 
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   </head>
-  <body class="font-sans text-gray-800">
+  <body>
     <slot />
   </body>
 </html>
