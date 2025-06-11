@@ -404,9 +404,50 @@ import Footer from "../components/Footer.astro";
             regardless of where you're located.
           </p>
         </div>
+
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            4. Data Sharing and Disclosure
+            4. Data Storage and Sync Strategy
+          </h2>
+
+          <ul class="list-disc pl-6 space-y-3 mt-3">
+            <li>
+              <strong>Primary Storage (Server):</strong> Your worship logs, habit
+              data, and preferences are <strong
+                >first saved to our secure server</strong
+              >, ensuring your data is backed up and accessible across devices.
+            </li>
+            <li>
+              <strong>Local Cache (Isar):</strong> For <strong
+                >performance optimization</strong
+              >, a copy of your data is cached locally on your device using the
+              Isar database immediately after successful server sync.
+            </li>
+            <li>
+              <strong>Data Flow:</strong>
+              <ul>
+                <li>User action → send to server API</li>
+                <li>On success → write to Isar cache</li>
+                <li>
+                  Reads → prefer local Isar for speed, fallback to server if
+                  missing
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Security & Encryption:</strong> Data in transit is encrypted
+              via HTTPS, and local Isar data is protected by your device’s OS encryption.
+            </li>
+            <li>
+              <strong>User Control: </strong> You can clear local cache <strong
+                >(Settings → Reset Data)</strong
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="text-gray-800 text-lg leading-relaxed">
+          <h2 class="text-2xl font-bold text-orange-600 mb-4">
+            5. Data Sharing and Disclosure
           </h2>
 
           <p>
@@ -454,7 +495,7 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            5. Retention of Your Data
+            6. Retention of Your Data
           </h2>
 
           <p>
@@ -480,7 +521,7 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            6. How We Protect Your Data
+            7. How We Protect Your Data
           </h2>
 
           <p>
@@ -511,7 +552,7 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            7. Your Data Rights
+            8. Your Data Rights
           </h2>
 
           <p>
@@ -552,7 +593,7 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            8. Children’s Privacy
+            9. Children’s Privacy
           </h2>
 
           <p>
@@ -587,7 +628,7 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            9. International Data Transfers
+            10. International Data Transfers
           </h2>
 
           <p>
@@ -614,7 +655,7 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            10. Changes to This Privacy Policy
+            11. Changes to This Privacy Policy
           </h2>
 
           <p>
@@ -644,7 +685,7 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            11. In-App Account Deletion
+            12. In-App Account Deletion
           </h2>
 
           <p>
@@ -679,7 +720,7 @@ import Footer from "../components/Footer.astro";
 
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            12. Data Safety Disclosure
+            13. Data Safety Disclosure
           </h2>
 
           <p>
@@ -705,7 +746,7 @@ import Footer from "../components/Footer.astro";
 
         <div class="text-gray-800 text-lg leading-relaxed">
           <h2 class="text-2xl font-bold text-orange-600 mb-4">
-            13. Contact Us
+            14. Contact Us
           </h2>
 
           <p>
